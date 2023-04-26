@@ -64,10 +64,12 @@ footer {
   }
 
   #avatar {
-    width: 128px;
+    width: 256px;
     padding-right: 32px;
+    align-self: center;
   }
 
+/*Originally width: 640px;*/
   .wrapper {
     width: 640px;
     flex-wrap: wrap;
@@ -85,11 +87,13 @@ footer {
     padding-top: 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   #avatar {
     width: 128px;
     padding-right: 32px;
+    align-self: center;
   }
 
   .wrapper {
