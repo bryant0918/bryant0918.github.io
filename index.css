@@ -2,6 +2,8 @@
 
 :root {
   --link-color: #036163;
+  --shadow: 0 2px 4px rgba(0,0,0,0.1);
+  --link-hover: #024e50;
 }
 
 body {
@@ -16,10 +18,12 @@ a {
   text-decoration-style: wavy;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   text-decoration: none;
+  color: var(--link-hover);
 }
 
 .wrapper {
@@ -32,10 +36,14 @@ a:hover {
   flex: 0 1 256px;
   padding-right: 32px;
   padding-top: 32px;
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 32px;
 }
 
 #avatar {
   width: 224px;
+  border-radius: 50%;
 }
 
 .sidebar ul {
@@ -48,6 +56,7 @@ a:hover {
 
 .content {
   flex: 0 1 auto;
+  box-shadow: var(--shadow);
 }
 
 footer {
